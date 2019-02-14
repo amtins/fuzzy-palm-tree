@@ -1,2 +1,1 @@
-# fuzzy-palm-tree
-🌴 Fuzzy palm tree
+# 🌴 Fuzzy palm tree
