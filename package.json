@@ -6,7 +6,7 @@
   "scripts": {
     "eslint": "eslint --ext .js ./",
     "eslint:fix": "eslint --fix --ext .js ./",
-    "postversion": "git checkout develop && git merge master && git push --all origin",
+    "postversion": "git push --all origin",
     "pretest": "npm install",
     "preversion": "npm run test",
     "silent-linter": "eslint --ext .js ./;exit 0",
