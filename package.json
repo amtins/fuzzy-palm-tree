@@ -6,6 +6,7 @@
   "scripts": {
     "eslint": "eslint --ext .js ./",
     "eslint:fix": "eslint --fix --ext .js ./",
+    "git": "git push --all origin",
     "postversion": "git push --all origin",
     "pretest": "npm install",
     "preversion": "npm run test",
