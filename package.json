@@ -10,7 +10,8 @@
     "pretest": "npm install",
     "preversion": "npm run test",
     "silent-linter": "eslint --ext .js ./;exit 0",
-    "test": "npm run eslint"
+    "test": "npm run eslint",
+    "version": ""
   },
   "repository": {
     "type": "git",
