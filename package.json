@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "silent-linter": "eslint --ext .js ./;exit 0",
     "linter": "eslint --ext .js ./",
+    "linter:fix": "eslint --fix --ext .js ./",
     "preversion": "npm run linter"
   },
   "repository": {
