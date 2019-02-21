@@ -4,12 +4,14 @@
   "description": "Fuzzy palm tree",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:ok": "echo \"No error: test ok\" && exit 0",
+    "eslint": "eslint --ext .js ./",
+    "eslint:fix": "eslint --fix --ext .js ./",
+    "postversion": "git merge master develop && git push --all origin",
+    "pretest": "npm install",
+    "preversion": "npm run eslint",
     "silent-linter": "eslint --ext .js ./;exit 0",
-    "linter": "eslint --ext .js ./",
-    "linter:fix": "eslint --fix --ext .js ./",
-    "preversion": "npm run linter"
+    "test": "npm run eslint",
+    "version": "npm run test"
   },
   "repository": {
     "type": "git",
