@@ -7,6 +7,7 @@
     "eslint": "eslint --ext .js ./",
     "eslint:fix": "eslint --fix --ext .js ./",
     "git": "git push --all origin",
+    "git:tags": "git push --all tags",
     "postversion": "git push --all origin",
     "pretest": "npm install",
     "preversion": "npm run test",
