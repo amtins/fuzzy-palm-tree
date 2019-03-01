@@ -9,7 +9,7 @@
     "git": "git push --all origin",
     "git:tags": "git push --all tags",
     "git:merge": "git branch -f develop master",
-    "postversion": "npm run git:merge && git push --all origin",
+    "postversion": "npx git:merge && npx git",
     "pretest": "npm install",
     "preversion": "npm run test",
     "silent-linter": "eslint --ext .js ./;exit 0",
