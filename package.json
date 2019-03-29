@@ -7,7 +7,7 @@
     "eslint": "eslint --ext .js ./",
     "eslint:fix": "eslint --fix --ext .js ./",
     "git": "git push --all origin",
-    "git:tags": "git push --all tags",
+    "git:tags": "git push origin --tags",
     "git:merge": "git branch -f develop master",
     "postversion": "npm run git:merge && npm run git:tags && npm run git",
     "pretest": "npm install",
