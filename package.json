@@ -1,6 +1,6 @@
 {
   "name": "fuzzy-palm-tree",
-  "version": "5.1.2",
+  "version": "5.1.3",
   "description": "Fuzzy palm tree",
   "main": "index.js",
   "scripts": {
