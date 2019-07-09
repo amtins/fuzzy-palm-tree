@@ -6,6 +6,9 @@
   "files": [
     "dist/app.js"
   ],
+  "browserslist": [
+    "defaults"
+  ],
   "scripts": {
     "eslint": "eslint --ext .js ./",
     "eslint:fix": "eslint --fix --ext .js ./",
@@ -13,8 +16,9 @@
     "git:tags": "git push origin --tags",
     "git:merge": "git branch -f master develop",
     "postversion": "npm run git:merge && npm run git:tags && npm run git",
+    "parcel:build": "parcel build app.js --out-file fuzzy-palm-tree.js --public-url /dist/",
     "pretest": "npm install",
-    "prepare": "parcel build app.js --out-file fuzzy-palm-tree.js --public-url /dist/",
+    "prepare": "npm run parcel:build",
     "preversion": "npm run test",
     "silent-linter": "eslint --ext .js ./;exit 0",
     "test": "npm run eslint",
