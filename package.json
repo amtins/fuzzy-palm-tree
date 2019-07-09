@@ -2,9 +2,10 @@
   "name": "fuzzy-palm-tree",
   "version": "5.1.8",
   "description": "Fuzzy palm tree",
-  "main": "dist/app.js",
+  "main": "dist/fuzzy-palm-tree.js",
   "files": [
-    "dist/app.js"
+    "dist/fuzzy-palm-tree.js",
+    "dist/fuzzy-palm-tree.js.map"
   ],
   "browserslist": [
     "defaults"
