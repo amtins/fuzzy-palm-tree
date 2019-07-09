@@ -2,7 +2,8 @@
   "name": "fuzzy-palm-tree",
   "version": "5.1.8",
   "description": "Fuzzy palm tree",
-  "main": "index.js",
+  "main": "dist/app.js",
+  "files": ["dist/app.js"],
   "scripts": {
     "eslint": "eslint --ext .js ./",
     "eslint:fix": "eslint --fix --ext .js ./",
