@@ -3,7 +3,9 @@
   "version": "5.1.8",
   "description": "Fuzzy palm tree",
   "main": "dist/app.js",
-  "files": ["dist/app.js"],
+  "files": [
+    "dist/app.js"
+  ],
   "scripts": {
     "eslint": "eslint --ext .js ./",
     "eslint:fix": "eslint --fix --ext .js ./",
@@ -12,6 +14,7 @@
     "git:merge": "git branch -f master develop",
     "postversion": "npm run git:merge && npm run git:tags && npm run git",
     "pretest": "npm install",
+    "prepare": "parcel build app.js --out-file fuzzy-palm-tree.js --public-url /dist/",
     "preversion": "npm run test",
     "silent-linter": "eslint --ext .js ./;exit 0",
     "test": "npm run eslint",
@@ -30,6 +33,7 @@
   "devDependencies": {
     "eslint": "^5.14.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0"
+    "eslint-plugin-import": "^2.16.0",
+    "parcel-bundler": "^1.12.3"
   }
 }
